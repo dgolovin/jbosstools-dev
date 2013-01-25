@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Jboss Tools Development IDE" uid="org.jboss.tools.dev.ide" id="org.eclipse.platform.ide" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <splash
+      location="org.eclipse.platform" />
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="org.eclipse.ui.workbench.compatibility" fragment="true"/>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.cvs" version="1.3.200.v20120525-1249-7B79FJJAkF7BF7VEH5IAJT"/>
+      <feature id="org.eclipse.cvs.source" version="1.3.200.v20120525-1249-7B79FJJAkF7BF7VEH5IAJT"/>
+      <feature id="org.eclipse.e4.rcp" version="1.1.0.v20120521-2329-8yFTIGIbGGduEZ6-7-jLx41nXj"/>
+      <feature id="org.eclipse.e4.rcp.source" version="1.1.0.v20120521-2329-8yFTIGIbGGduEZ6-7-jLx41nXj"/>
+      <feature id="org.eclipse.emf.common" version="2.8.0.v20120911-0500"/>
+      <feature id="org.eclipse.emf.ecore" version="2.8.1.v20120911-0500"/>
+      <feature id="org.eclipse.equinox.p2.core.feature" version="1.1.0.v20120524-0542-8297FncFWmE7h4Asx2cpqz-T38"/>
+      <feature id="org.eclipse.equinox.p2.core.feature.source" version="1.1.0.v20120524-0542-8297FncFWmE7h4Asx2cpqz-T38"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature" version="1.1.0.v20120524-0542-7A6FEcDiVOTg1Q_HuZrEuBty3dqr"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature.source" version="1.1.0.v20120524-0542-7A6FEcDiVOTg1Q_HuZrEuBty3dqr"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature" version="1.1.0.v20120524-0542-785EoBqNKNYz-GX2sUgCaBty3dqr"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature.source" version="1.1.0.v20120524-0542-785EoBqNKNYz-GX2sUgCaBty3dqr"/>
+      <feature id="org.eclipse.equinox.p2.user.ui" version="2.2.0.v20120524-0542-62DG9JXTlSiz-UbcP0w0KGl9CKNP"/>
+      <feature id="org.eclipse.equinox.p2.user.ui.source" version="2.2.0.v20120524-0542-62DG9JXTlSiz-UbcP0w0KGl9CKNP"/>
+      <feature id="org.eclipse.help" version="1.4.1.v20120726-051048-8R7xFOUFLWUl7MoSKV_RBXl27"/>
+      <feature id="org.eclipse.help.source" version="1.4.1.v20120726-051048-8R7xFOUFLWUl7MoSKV_RBXl27"/>
+      <feature id="org.eclipse.jdt" version="3.8.1.v20120814-104540-8-8nFqpFNOfwKDRVz-tXOcL5d_83"/>
+      <feature id="org.eclipse.jdt.source" version="3.8.1.v20120814-104540-8-8nFqpFNOfwKDRVz-tXOcL5d_83"/>
+      <feature id="org.eclipse.m2e.feature" version="1.2.0.20120903-1050"/>
+      <feature id="org.eclipse.pde" version="3.8.1.v20120814-104528-7c7vFixFFt6Zr5aC6KM6LGWSd"/>
+      <feature id="org.eclipse.pde.source" version="3.8.1.v20120814-104528-7c7vFixFFt6Zr5aC6KM6LGWSd"/>
+      <feature id="org.eclipse.platform" version="4.2.1.v20120814-120134-9JF7BHVGFyMveli1uX6aTH0q-eAap6PAgOP5mO"/>
+      <feature id="org.eclipse.platform.source" version="4.2.1.v20120814-120134-9JF7BHVGFyMveli1uX6aTH0q-eAap6PAgOP5mO"/>
+      <feature id="org.eclipse.rcp" version="4.2.1.v20120814-120134-7IAPA8BrHQicS-rjP0GbqK780kMy"/>
+      <feature id="org.eclipse.rcp.source" version="4.2.1.v20120814-120134-7IAPA8BrHQicS-rjP0GbqK780kMy"/>
+      <feature id="org.eclipse.sdk" version="4.2.1.v20120814-120134-7T7oDODQ-3Heq-afCDlg7T4xJuvxaC2ohMfCfB5451Rz0"/>
+      <feature id="org.eclipse.wst.common_core.feature" version="3.4.1.v201208162200-7B7EFMTF7RZHOjIuOyR0QS"/>
+      <feature id="org.eclipse.wst.common_ui.feature" version="3.4.1.v201208170300-7C7AFeEEdhOaweJhCnQfykJvPz-S1RT"/>
+      <feature id="org.eclipse.wst.xml_core.feature" version="3.4.1.v201208170345-7C7OFm5F7RZHQRIsOz-Nz-_n"/>
+      <feature id="org.eclipse.wst.xml_ui.feature" version="3.4.1.v201208170345-7H7GFeFDxumUpsw5rgjWnKDrsz0p4ymwjQz00T2S"/>
+      <feature id="org.eclipse.wst.xml_userdoc.feature" version="3.3.0.v201102071641-50FYwAkF7B77UBZFDBL"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+   </configurations>
+
+</product>
