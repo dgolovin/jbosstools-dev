@@ -13,13 +13,8 @@
 	<repositories>
 		<repository>
 			<id>eclipse-juno</id>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO</url>
 			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>webtools</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/webtools/downloads/drops/R3.5.0/I-3.5.0-20130125110508/repository</url>
 		</repository>
 	</repositories>
 
