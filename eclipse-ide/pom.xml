@@ -19,7 +19,7 @@
 		<repository>
 			<id>webtools</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/webtools/downloads/drops/R3.4.1/R-3.4.1-20120917174803/repository</url>
+			<url>http://download.eclipse.org/webtools/repository/juno/</url>
 		</repository>
 	</repositories>
 
