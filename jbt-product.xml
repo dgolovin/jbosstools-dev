@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jboss.tools.dev</groupId>
+	<artifactId>jbt-product</artifactId>
+	<name>JBoss Tools Product Build</name>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<root.path>..</root.path>
+	</properties>
+	<modules>
+		<module>${root.path}/jbosstools-aerogear</module>
+		<module>${root.path}/jbosstools-central</module>
+		<module>${root.path}/jbosstools-esb</module>
+		<module>${root.path}/jbosstools-gwt</module>
+		<module>${root.path}/jbosstools-livereload</module>
+		<module>${root.path}/jbosstools-server</module>
+		<module>${root.path}/jbosstools-xulrunner</module>
+		<module>${root.path}/jbosstools-base</module>
+		<module>${root.path}/jbosstools-forge</module>
+		<module>${root.path}/jbosstools-hibernate</module>
+		<module>${root.path}/jbosstools-javaee</module>
+		<module>${root.path}/jbosstools-openshift</module>
+		<module>${root.path}/jbosstools-vpe</module>
+		<module>${root.path}/jbosstools-freemarker</module>
+		<module>${root.path}/jbosstools-jst</module>
+		<module>${root.path}/jbosstools-portlet</module>
+		<module>${root.path}/jbosstools-webservices</module>
+	</modules>
+</project>
