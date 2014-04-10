@@ -12,9 +12,8 @@
 	</properties>
 	<modules>
 		<module>${root.path}/jbosstools-aerogear</module>
+		<module>${root.path}/jbosstools-arquillian</module>
 		<module>${root.path}/jbosstools-central</module>
-		<module>${root.path}/jbosstools-esb</module>
-		<module>${root.path}/jbosstools-gwt</module>
 		<module>${root.path}/jbosstools-livereload</module>
 		<module>${root.path}/jbosstools-server</module>
 		<module>${root.path}/jbosstools-xulrunner</module>
@@ -24,6 +23,7 @@
 		<module>${root.path}/jbosstools-javaee</module>
 		<module>${root.path}/jbosstools-openshift</module>
 		<module>${root.path}/jbosstools-vpe</module>
+                <module>${root.path}/jbosstools-browsersim</module>
 		<module>${root.path}/jbosstools-freemarker</module>
 		<module>${root.path}/jbosstools-jst</module>
 		<module>${root.path}/jbosstools-portlet</module>
