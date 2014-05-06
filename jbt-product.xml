@@ -17,6 +17,7 @@
 	</properties>
 	<modules>
 		<module>${root.path}/jbosstools-base</module>
+		<module>${root.path}/jbosstools-arquillian</module>
 		<module>${root.path}/jbosstools-central</module>
 		<module>${root.path}/jbosstools-livereload</module>
 		<module>${root.path}/jbosstools-server</module>
