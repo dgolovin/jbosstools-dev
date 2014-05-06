@@ -7,19 +7,24 @@
 	<packaging>eclipse-repository</packaging>
 	
 	<properties>
-		<tycho-version>0.16.0</tycho-version>
+		<tycho-version>0.18.1</tycho-version>
 	</properties>
 
 	<repositories>
 		<repository>
 			<id>eclipse-juno</id>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/luna</url>
 			<layout>p2</layout>
 		</repository>
+                <repository>
+                        <id>tp-juno</id>
+                        <url>file:///home/eskimo/Projects/jbdevstudio/4.2.x/fork/jbosstools-target-platforms/jbosstools/multiple/target/jbosstools-multiple.target.repo/</url>
+                        <layout>p2</layout>
+                </repository>
 		<repository>
 			<id>webtools</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/webtools/downloads/drops/R3.5.0/I-3.5.0-20130125110508/repository</url>
+			<url>http://download.eclipse.org/webtools/downloads/drops/R3.5.0/R-3.5.0-20130610150119/repository</url>
 		</repository>
 	</repositories>
 

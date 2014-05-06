@@ -7,6 +7,7 @@
    </configIni>
 
    <launcherArgs>
+      <programArgs>-XX:MaxPermSize=1024M -XX:PermSize=1024M</programArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -29,12 +30,16 @@
    </plugins>
 
    <features>
+      <feature id="org.eclipse.epp.package.jee.feature"/>
       <feature id="org.jboss.tools.jsf.feature"/>
       <feature id="org.eclipse.wst.xml_ui.feature"/>
       <feature id="org.jboss.tools.common.feature"/>
       <feature id="org.eclipse.wst.server_userdoc.feature"/>
       <feature id="org.eclipse.wst.xml_userdoc.feature"/>
       <feature id="org.jboss.tools.jst.feature"/>
+      <feature id="org.jboss.tools.jst.jsdt.feature"/>
+      <feature id="org.jboss.tools.aerogear.hybrid.feature"/>
+      <feature id="org.jboss.tools.vpe.cordovasim.feature"/>
       <feature id="org.eclipse.wst.web_core.feature"/>
       <feature id="org.eclipse.wst.common_ui.feature"/>
       <feature id="org.eclipse.wst.web_userdoc.feature"/>
@@ -52,7 +57,6 @@
       <feature id="org.jboss.tools.maven.hibernate.feature"/>
       <feature id="org.jboss.tools.maven.jdt.feature"/>
       <feature id="org.jboss.tools.maven.portlet.feature"/>
-      <feature id="org.jboss.tools.maven.profiles.feature"/>
       <feature id="org.jboss.tools.maven.project.examples.feature"/>
       <feature id="org.jboss.tools.maven.seam.feature"/>
       <feature id="org.jboss.tools.maven.sourcelookup.feature"/>
