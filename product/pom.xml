@@ -18,7 +18,7 @@
 		</repository>
                 <repository>
                         <id>tp-juno</id>
-                        <url>file:///home/eskimo/Projects/jbdevstudio/4.2.x/fork/jbosstools-target-platforms/jbosstools/multiple/target/jbosstools-multiple.target.repo/</url>
+                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta1-SNAPSHOT/</url>
                         <layout>p2</layout>
                 </repository>
 		<repository>
