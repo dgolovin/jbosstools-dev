@@ -18,7 +18,7 @@
 		</repository>
                 <repository>
                         <id>tp-juno</id>
-                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta1-SNAPSHOT/</url>
+                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta2-SNAPSHOT/</url>
                         <layout>p2</layout>
                 </repository>
 		<repository>
