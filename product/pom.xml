@@ -18,14 +18,14 @@
 		</repository>
                 <repository>
                         <id>tp-juno</id>
-                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta2-SNAPSHOT/</url>
+                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta4-SNAPSHOT/</url>
                         <layout>p2</layout>
                 </repository>
-		<repository>
-			<id>webtools</id>
+		<!--repository>
+			<id>tern</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/webtools/downloads/drops/R3.5.0/R-3.5.0-20130610150119/repository</url>
-		</repository>
+			<url>http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/</url>
+		</repository-->
 	</repositories>
 
 	<build>
