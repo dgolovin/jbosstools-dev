@@ -11,6 +11,7 @@
 	<streamLogs>true</streamLogs>
 	<skipTests>true</skipTests>
 	<tpcKind>unified</tpcKind>
+	<tycho.localArtifacts>default</tycho.localArtifacts>
    </properties>
    <build>
    <plugins>
@@ -28,6 +29,7 @@
 	<properties>
 		<skipTests>${skipTests}</skipTests>
 		<tpc.targetKind>${tpcKind}</tpc.targetKind>
+		<tycho.localArtifacts>${tycho.localArtifacts}</tycho.localArtifacts>
 	</properties>
       </configuration>
       <executions>
