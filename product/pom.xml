@@ -7,7 +7,7 @@
 	<packaging>eclipse-repository</packaging>
 	
 	<properties>
-		<tycho-version>0.20.0</tycho-version>
+		<tycho-version>0.21.0</tycho-version>
 	</properties>
 
 	<repositories>
@@ -18,14 +18,14 @@
 		</repository>
                 <repository>
                         <id>tp-juno</id>
-                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta4-SNAPSHOT/</url>
+                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.CR1-SNAPSHOT/</url>
                         <layout>p2</layout>
                 </repository>
-		<!--repository>
+		<repository>
 			<id>tern</id>
 			<layout>p2</layout>
-			<url>http://download.jboss.org/jbosstools/updates/requirements/tern/0.2.0.201405210810-SNAPSHOT/</url>
-		</repository-->
+			<url>http://download.jboss.org/jbosstools/updates/requirements/tern/0.4.0.201408101311-SNAPSHOT/</url>
+		</repository>
 	</repositories>
 
 	<build>
@@ -36,14 +36,22 @@
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho-version}</version>
-				<configuration combine.self="override">
-					<resolver>p2</resolver>
-				</configuration>
-			</plugin>
+                       <plugin>
+                                <groupId>org.eclipse.tycho</groupId>
+                                <artifactId>target-platform-configuration</artifactId>
+                                <version>${tycho-version}</version>
+                                <configuration>
+                                        <resolver>p2</resolver>
+                                        <ignoreTychoRepositories>true</ignoreTychoRepositories>
+                                        <!--environments>
+                                                <environment>
+                                                        <os>win32</os>
+                                                        <ws>win32</ws>
+                                                        <arch>x86_64</arch>
+                                                </environment>
+                                        </environments-->
+                                </configuration>
+                        </plugin>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-p2-repository-plugin</artifactId>

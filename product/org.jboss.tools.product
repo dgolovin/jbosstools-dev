@@ -38,7 +38,7 @@
       <feature id="org.eclipse.wst.xml_userdoc.feature"/>
       <feature id="org.jboss.tools.jst.feature"/>
       <feature id="org.jboss.tools.jst.jsdt.feature"/>
-      <feature id="org.jboss.tools.aerogear.hybrid.feature"/>
+      <feature id="org.jboss.tools.aerogear.thym.feature"/>
       <feature id="org.jboss.tools.vpe.cordovasim.feature"/>
       <feature id="org.eclipse.wst.web_core.feature"/>
       <feature id="org.eclipse.wst.common_ui.feature"/>
