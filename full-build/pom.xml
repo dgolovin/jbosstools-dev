@@ -68,18 +68,6 @@
          </pomIncludes>
 		</configuration>
          </execution>
-
- 	<execution>
-            <id>build-product</id>
-            <goals>
-               <goal>run</goal>
-            </goals>
-		<configuration>
-	<pomIncludes>
-            <pomInclude>jbosstools-dev/product/pom.xml</pomInclude>
-         </pomIncludes>
-		</configuration>
-         </execution>
       </executions>
    </plugin>
    </plugins>
