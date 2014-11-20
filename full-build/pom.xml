@@ -34,40 +34,35 @@
       </configuration>
       <executions>
          <execution>
-            <id>build-target-platform</id>
+            <id>full-build-exec</id>
             <goals>
                <goal>run</goal>
             </goals>
 		<configuration>
 	 <pomIncludes>
             <pomInclude>jbosstools-target-platforms/jbosstools/multiple/pom.xml</pomInclude> 
-         </pomIncludes>
-		</configuration>
-         </execution>
-
-         <execution>
-            <id>build-parent</id>
-            <goals>
-               <goal>run</goal>
-            </goals>
-		<configuration>
-	<pomIncludes>
             <pomInclude>jbosstools-build/parent/pom.xml</pomInclude>
+            <pomInclude>jbosstools-base/pom.xml</pomInclude>
+            <pomInclude>jbosstools-hibernate/pom.xml</pomInclude>
+            <pomInclude>jbosstools-server</pomInclude>
+            <pomInclude>jbosstools-jst</pomInclude>
+            <pomInclude>jbosstools-xulrunner</pomInclude>
+            <pomInclude>jbosstools-vpe</pomInclude>
+            <pomInclude>jbosstools-javaee</pomInclude>
+            <pomInclude>jbosstools-arquillian</pomInclude>
+            <pomInclude>jbosstools-birt</pomInclude>
+            <pomInclude>jbosstools-webservices</pomInclude>
+            <pomInclude>jbosstools-browsersim</pomInclude>
+            <pomInclude>jbosstools-forge</pomInclude>
+            <pomInclude>jbosstools-freemarker</pomInclude>
+            <pomInclude>jbosstools-livereload</pomInclude>
+            <pomInclude>jbosstools-openshift</pomInclude>
+            <pomInclude>jbosstools-portlet</pomInclude>
+            
          </pomIncludes>
-		</configuration>
+                </configuration>
          </execution>
 
-         <execution>
-            <id>build-all-modules</id>
-            <goals>
-               <goal>run</goal>
-            </goals>
-		<configuration>
-	<pomIncludes>
-            <pomInclude>jbosstools-dev/jbt-all-modules.xml</pomInclude>
-         </pomIncludes>
-		</configuration>
-         </execution>
       </executions>
    </plugin>
    </plugins>
