@@ -1,0 +1,27 @@
+# To see graph install graphviz with package manager
+# On Fedora 20:
+# 	sudo yum insatll graphviz
+# Then run:
+# 	dotty build-graph.dot 
+
+digraph jbosstools {
+  graph [compound=true,  size="10,10", ratio=fill];
+
+  "jst" -> { "base" }
+  "vpe" -> { "jst" "base" "xulrunner"}
+  "server" -> { "base" }
+  "hibernate" -> { "base" }
+  "freemarker" -> { "base" }
+  "central" -> { "base" "javaee" "portlet" "jst" "hibernate" "server" "vpe" } 
+  "forge" -> { "base" }
+  "arquillian" -> { "base" "server" "portlet" "javaee" "jst" "central" }
+  "aerogear" -> { "base" "jst" "browsersim" } 
+  "browsersim" -> { "base" "jst" }
+  "javaee" -> { "base" "jst" "server" "hibernate" "vpe" "xulrunner" }
+  "openshift" -> { "base" "server" }
+  "webservices" -> { "base" "server" }
+  "birt" -> { "base" "hibernate" }
+  "livereload" -> { "base" "server" }
+  "portlet" -> { "server" "javaee" "base" "hibernate" "jst" "vpe" }
+  "xulrunner" -> { "base" } 
+}
