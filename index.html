@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <meta charset="utf-8">
+    <title>Viz.js</title>
+  </head>
+  <body>
+  
+    <script src="https://raw.githubusercontent.com/dgolovin/viz.js/gh-pages/viz.js"></script>
+    <script>
+    	
+
+      function inspect(s) {
+        return "<pre>" + s.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;") + "</pre>"
+      }
+      
+      function src(id) {
+        return document.getElementById(id).innerHTML;
+      }
+      
+      function example(id, format, engine) {
+        var result;
+        try {
+      	  jQuery.get("build-graph.dot", function(data) {
+  	       document.body.innerHTML += Viz(data, format, engine);
+      	  });
+        } catch(e) {
+          return inspect(e.toString());
+        }
+      }
+      example("cluster", "svg");
+    </script>
+    
+  </body>
+</html>

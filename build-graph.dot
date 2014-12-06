@@ -3,6 +3,8 @@
 # 	sudo yum insatll graphviz
 # Then run:
 # 	dotty build-graph.dot 
+# To generate image
+# 	dot build-graph.dot -Tpng -obuild-graph.png
 
 digraph jbosstools {
   graph [compound=true,  size="10,10", ratio=fill];
