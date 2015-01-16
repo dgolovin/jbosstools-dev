@@ -17,7 +17,6 @@
 		<module>${root.path}/jbosstools-birt</module>
 		<module>${root.path}/jbosstools-livereload</module>
 		<module>${root.path}/jbosstools-server</module>
-		<module>${root.path}/jbosstools-xulrunner</module>
 		<module>${root.path}/jbosstools-aerogear</module>
 		<module>${root.path}/jbosstools-forge</module>
 		<module>${root.path}/jbosstools-hibernate</module>
@@ -30,19 +29,4 @@
 		<module>${root.path}/jbosstools-portlet</module>
 		<module>${root.path}/jbosstools-webservices</module>
 	</modules>
-        <repositories>
-                <!-- To resolve parent artifact -->
-                <repository>
-                        <id>jboss-public-repository-group-jbt-product</id>
-                        <name>JBoss Public Repository Group</name>
-                        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-                        <releases>
-                                <enabled>true</enabled>
-                        </releases>
-                        <snapshots>
-                                <enabled>true</enabled>
-                        </snapshots>
-			<layout>default</layout>
-                </repository>
-        </repositories>
 </project>
