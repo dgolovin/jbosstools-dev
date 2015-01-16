@@ -12,6 +12,9 @@
 	<skipTests>true</skipTests>
 	<tpcKind>unified</tpcKind>
 	<tycho.localArtifacts>default</tycho.localArtifacts>
+	<settingsFile>${project.basedir}/../settings.xml</settingsFile>
+	<skipITests>true</skipITests>
+	<projectsDirectory>${project.basedir}/../../</projectsDirectory>
    </properties>
    <build>
    <plugins>
@@ -20,7 +23,7 @@
    <version>1.6</version>
       <configuration>
         <debug>false</debug>
-	<localRepositoryPath>${invoker.projectsDirectory}/.m2</localRepositoryPath>
+	<localRepositoryPath>${projectsDirectory}/.m2</localRepositoryPath>
 	<streamLogs>${streamLogs}</streamLogs>
  	<goals>
 		<goal>clean</goal>
@@ -31,6 +34,7 @@
 		<tpc.targetKind>${tpcKind}</tpc.targetKind>
 		<tycho.localArtifacts>${tycho.localArtifacts}</tycho.localArtifacts>
 	</properties>
+	<projectsDirectory>${projectsDirectory}</projectsDirectory>
       </configuration>
       <executions>
          <execution>
