@@ -14,7 +14,7 @@
 		<settingsFile>${project.basedir}/../settings.xml</settingsFile>
 		<skipITests>true</skipITests>
 		<projectsDirectory>${project.basedir}/../../</projectsDirectory>
-		<maven.repo.local>${project.basedir}/../../.m2</maven.repo.local>
+		<mavenOpts>-Xmx4096m</mavenOpts>
 	</properties>
 	<build>
 		<plugins>
@@ -23,7 +23,7 @@
 				<version>1.6</version>
 				<configuration>
 					<debug>false</debug>
-					<localRepositoryPath>${maven.repo.local}</localRepositoryPath>
+					<localRepositoryPath>${projectsDirectory}/.m2</localRepositoryPath>
 					<streamLogs>${streamLogs}</streamLogs>
 					<goals>
 						<goal>clean</goal>
@@ -37,6 +37,7 @@
 					</properties>
 					<projectsDirectory>${projectsDirectory}</projectsDirectory>
 					<settingsFile>${settingsFile}</settingsFile>
+					<mavenOpts>${mavenOpts}</mavenOpts>
 				</configuration>
 				<executions>
 					<execution>

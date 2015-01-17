@@ -1,1 +1,4 @@
 target
+build.log
+interpolated-jbt-all-modules.xml
+interpolated-settings.xml
