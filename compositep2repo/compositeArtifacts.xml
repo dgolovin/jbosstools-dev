@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='JBoss Tools - Core - Staging Repository' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+<properties size='3'>
+<property name='p2.compressed' value='true'/>
+<property name='p2.atomic.composite.loading' value='false'/>
+<property name='p2.timestamp' value='1422649083000'/>
+</properties>
+<children size='19'>
+  <child location='../../jbosstools-aerogear/site/target/repository/'/>
+  <child location='../../jbosstools-arquillian/site/target/repository/'/>
+  <child location='../../jbosstools-base/site/target/repository/'/>
+  <child location='../../jbosstools-birt/site/target/repository/'/>
+  <child location='../../jbosstools-browsersim/site/target/repository/'/>
+  <child location='../../jbosstools-central/site/target/repository/'/>
+  <child location='../../jbosstools-forge/site/target/repository/'/>
+  <child location='../../jbosstools-freemarker/site/target/repository/'/>
+  <child location='../../jbosstools-javaee/site/target/repository/'/>
+  <child location='../../jbosstools-jst/site/target/repository/'/>
+  <child location='../../jbosstools-openshift/site/target/repository/'/>
+  <child location='../../jbosstools-portlet/site/target/repository/'/>
+  <child location='../../jbosstools-server/site/target/repository/'/>
+  <child location='../../jbosstools-vpe/site/target/repository/'/>
+  <child location='../../jbosstools-webservices/site/target/repository/'/>
+  <child location='../../jbosstools-hibernate/site/target/repository/'/>
+  <child location='../../jbosstools-livereload/site/target/repository/'/>
+  <child location='http://downloads.jboss.org/jbosstools/updates/integration/luna/core/thym/'/>
+</children>
+<!--references size="2">
+<repository options="1" type="0" uri="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/luna/" url="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/luna/"/>
+<repository options="1" type="1" uri="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/luna/" url="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/luna/"/>
+</references -->
+</repository>
