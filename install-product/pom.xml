@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>jbosstools</groupId>
+	<artifactId>install-product</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Call p2Director application </name>
+	<properties>
+		<tycho-version>0.22.0</tycho-version>
+		<repo>https://devstudio.redhat.com/updates/8.0-staging/</repo>
+		<ius>com.jboss.devstudio.core.package</ius>
+		<dest>${project.build.directory}/jbdevstudio</dest>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-eclipserun-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho.extras</groupId>
+					<artifactId>tycho-eclipserun-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<appArgLine>-application org.eclipse.equinox.p2.director -repository ${repo} -installIU ${ius} -destination ${dest}</appArgLine>
+						<dependencies>
+							<dependency>
+								<artifactId>org.eclipse.epp.package.committers.feature</artifactId>
+								<type>eclipse-feature</type>
+							</dependency>
+							<dependency>
+								<artifactId>org.eclipse.osgi.compatibility.state</artifactId>
+								<type>eclipse-plugin</type>
+							</dependency>
+						</dependencies>
+						<repositories>
+							<repository>
+								<id>mars</id>
+								<layout>p2</layout>
+								<url>http://download.eclipse.org/releases/mars</url>
+							</repository>
+						</repositories>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>eclipse-run</goal>
+							</goals>
+							<phase>compile</phase>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
