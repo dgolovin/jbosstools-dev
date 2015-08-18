@@ -10,6 +10,7 @@
 		<streamLogs>true</streamLogs>
 		<skipTests>true</skipTests>
 		<tpcKind>unified</tpcKind>
+		<tpcValidate>false</tpcValidate>
 		<tycho.localArtifacts>default</tycho.localArtifacts>
 		<settingsFile>${project.basedir}/../settings.xml</settingsFile>
 		<skipITests>true</skipITests>
@@ -33,7 +34,11 @@
 						<skipTests>${skipTests}</skipTests>
 						<skipITests>${skipITests}</skipITests>
 						<tpc.targetKind>${tpcKind}</tpc.targetKind>
+						<validate-target-platform.failOnError>${tpcValidate}</validate-target-platform.failOnError>
 						<tycho.localArtifacts>${tycho.localArtifacts}</tycho.localArtifacts>
+						<tychoVersion>0.23.0</tychoVersion>
+						<maven.test.failure.ignore>true</maven.test.failure.ignore>
+						<skipBaselineComparison>true</skipBaselineComparison>
 					</properties>
 					<projectsDirectory>${projectsDirectory}</projectsDirectory>
 					<settingsFile>${settingsFile}</settingsFile>
@@ -41,17 +46,38 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>build-target-platform</id>
+                                                <id>build-maven-plugins</id>
+                                                <goals>
+                                                        <goal>run</goal>
+                                                </goals>
+                                                <configuration>
+                                                        <pomIncludes>
+                                                                <pomInclude>jbosstools-maven-plugins/tycho-plugins/pom.xml</pomInclude>
+                                                        </pomIncludes>
+                                                </configuration>
+                                        </execution>
+					<execution>
+						<id>build-jbosstools-target-platform</id>
 						<goals>
 							<goal>run</goal>
 						</goals>
 						<configuration>
 							<pomIncludes>
-								<pomInclude>jbosstools-target-platforms/jbosstools/multiple/pom.xml</pomInclude>
+								<pomInclude>jbosstools-target-platforms/jbosstools/pom.xml</pomInclude>
 							</pomIncludes>
 						</configuration>
 					</execution>
-
+					<execution>
+						<id>build-jbdevstudio-target-platform</id>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<pomIncludes>
+								<pomInclude>jbosstools-target-platforms/jbdevstudio/pom.xml</pomInclude>
+							</pomIncludes>
+						</configuration>
+					</execution>
 					<execution>
 						<id>build-parent</id>
 						<goals>

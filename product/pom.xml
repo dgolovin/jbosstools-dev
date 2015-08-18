@@ -7,24 +7,29 @@
 	<packaging>eclipse-repository</packaging>
 	
 	<properties>
-		<tycho-version>0.21.0</tycho-version>
+		<tycho-version>0.22.0</tycho-version>
 	</properties>
 
 	<repositories>
 		<repository>
 			<id>eclipse-juno</id>
-			<url>http://download.eclipse.org/releases/luna</url>
+			<url>http://download.eclipse.org/releases/mars</url>
 			<layout>p2</layout>
 		</repository>
                 <repository>
                         <id>tp-juno</id>
-                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.CR1-SNAPSHOT/</url>
+                        <url>http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.50.0.Alpha1-SNAPSHOT/</url>
                         <layout>p2</layout>
                 </repository>
 		<repository>
 			<id>tern</id>
 			<layout>p2</layout>
-			<url>http://download.jboss.org/jbosstools/updates/requirements/tern/0.4.0.201408101311-SNAPSHOT/</url>
+			<url>http://download.jboss.org/jbosstools/updates/requirements/tern/0.8.0.201501272018</url>
+		</repository>
+		<repository>
+			<id>xulrunner</id>
+			<layout>p2</layout>
+			<url>http://download.jboss.org/jbosstools/updates/requirements/xulrunner-1.9.2/</url>
 		</repository>
 	</repositories>
 

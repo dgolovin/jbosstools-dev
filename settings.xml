@@ -148,16 +148,17 @@ under the License.
      | Specifies a repository mirror site to use instead of a given repository. The repository that
      | this mirror serves has an ID that matches the mirrorOf element of this mirror. IDs are used
      | for inheritance and direct lookup purposes, and must be unique across the set of mirrors.
-     |
+     | -->
     <mirror>
-      <id>mirrorId</id>
-      <mirrorOf>repositoryId</mirrorOf>
-      <name>Human Readable Name for this Mirror.</name>
-      <url>http://my.repository.com/repo/path</url>
+      <id>nightly-repos-empty-mirror</id>
+      <mirrorOf>jbosstools-site,jbosstools-base,jbosstools-aerogear,jbosstools-openshift,jbosstools-hibernate,jbosstools-javaee,jbosstools-central,jbosstools-server,jbosstools-jst,jbosstools-portlet,jbosstools-birt,jbosstools-vpe,jbosstools-freemarker,jbosstools-forgejbosstools-arquillian,jbosstools-browsersim,jbosstools-livereload,jbosstools-webservices</mirrorOf>
+      <name>Empty mirror repository</name>
+      <url>file:///home/eskimo/Projects/jbdevstudio/4.3.x/fork/jbds-releng/jbosstools-dev/emptyp2repo</url>
+      <layout>p2</layout>
+      <mirrorOfLayouts>p2</mirrorOfLayouts>
     </mirror>
-     -->
   </mirrors>
-  
+
   <!-- profiles
    | This is a list of profiles which can be activated in a variety of ways, and which can modify
    | the build process. Profiles provided in the settings.xml are intended to provide local machine-
@@ -194,8 +195,29 @@ under the License.
      -->	   
     <profile>
       <id>default-jboss-repos</id>
+   <properties>
+    <tern.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/tern</tern.reqs.url>
+    <tern.version>0.10.0.201506172157</tern.version>
+    <thym.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/thym</thym.reqs.url>
+    <thym.version>0.3.0-SNAPSHOT-201507141315</thym.version>
+   </properties>
 
       <repositories>
+    <repository>
+      <id>jbosstools-xulrunner-site</id>
+      <layout>p2</layout>
+      <url>${jbosstools-xulrunner-site}</url>
+    </repository>
+    <repository>
+      <id>eclipse-tern</id>
+      <layout>p2</layout>
+      <url>${tern.reqs.url}/${tern.version}</url>
+    </repository>
+    <repository>
+        <id>eclipse-thym</id>
+        <layout>p2</layout>
+        <url>${thym.reqs.url}/${thym.version}</url>
+    </repository>
         <repository>
           <id>jboss-public-repository-group-jbt-product</id>
           <name>JBoss Public Repository Group</name>
@@ -209,6 +231,12 @@ under the License.
           <layout>default</layout>
         </repository>
       </repositories>
+<pluginRepositories>
+   <pluginRepository>
+     <id>tycho-snapshots</id>
+     <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+   </pluginRepository>
+</pluginRepositories>
     </profile>
 
     <!--
