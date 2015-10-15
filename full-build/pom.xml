@@ -12,13 +12,40 @@
 		<tpcKind>unified</tpcKind>
 		<tpcValidate>false</tpcValidate>
 		<tycho.localArtifacts>default</tycho.localArtifacts>
-		<settingsFile>${project.basedir}/../settings.xml</settingsFile>
+		<settingsFileDir>${project.basedir}/..</settingsFileDir>
 		<skipITests>true</skipITests>
 		<projectsDirectory>${project.basedir}/../../</projectsDirectory>
 		<mavenOpts>-Xmx4096m</mavenOpts>
 	</properties>
 	<build>
 		<plugins>
+			<plugin>
+                                <artifactId>maven-resources-plugin</artifactId>
+                                <version>2.7</version>
+                                <executions>
+                                        <execution>
+                                                <id>copy-resources</id>
+                                                <!-- here the phase you need -->
+                                                <phase>validate</phase>
+                                                <goals>
+                                                        <goal>copy-resources</goal>
+                                                </goals>
+                                                <configuration>
+                                                        <outputDirectory>${project.build.directory}</outputDirectory>
+                                                        <resources>
+                                                                <resource>
+                                                                        <directory>${settingsFileDir}</directory>
+                                                                        <filtering>true</filtering>
+                                                                        <includes>
+                                                                                <include>settings.xml</include>
+                                                                        </includes>                                    
+                                                                </resource>
+                                                        </resources>
+                                                </configuration>
+                                        </execution>
+                                </executions>
+                        </plugin>
+
 			<plugin>
 				<artifactId>maven-invoker-plugin</artifactId>
 				<version>1.6</version>
@@ -41,7 +68,7 @@
 						<skipBaselineComparison>true</skipBaselineComparison>
 					</properties>
 					<projectsDirectory>${projectsDirectory}</projectsDirectory>
-					<settingsFile>${settingsFile}</settingsFile>
+					<settingsFile>${project.build.directory}/settings.xml</settingsFile>
 					<mavenOpts>${mavenOpts}</mavenOpts>
 				</configuration>
 				<executions>

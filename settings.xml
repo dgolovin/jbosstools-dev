@@ -151,9 +151,9 @@ under the License.
      | -->
     <mirror>
       <id>nightly-repos-empty-mirror</id>
-      <mirrorOf>jbosstools-site,jbosstools-base,jbosstools-aerogear,jbosstools-openshift,jbosstools-hibernate,jbosstools-javaee,jbosstools-central,jbosstools-server,jbosstools-jst,jbosstools-portlet,jbosstools-birt,jbosstools-vpe,jbosstools-freemarker,jbosstools-forgejbosstools-arquillian,jbosstools-browsersim,jbosstools-livereload,jbosstools-webservices</mirrorOf>
+      <mirrorOf>jbosstools-site,jbosstools-base,jbosstools-aerogear,jbosstools-openshift,jbosstools-hibernate,jbosstools-javaee,jbosstools-central,jbosstools-server,jbosstools-jst,jbosstools-portlet,jbosstools-birt,jbosstools-vpe,jbosstools-freemarker,jbosstools-forgejbosstools-arquillian,jbosstools-browsersim,jbosstools-livereload,jbosstools-webservices,jbosstools-playground,thym</mirrorOf>
       <name>Empty mirror repository</name>
-      <url>file:///home/eskimo/Projects/jbdevstudio/4.3.x/fork/jbds-releng/jbosstools-dev/emptyp2repo</url>
+      <url>file://${project.basedir}/../emptyp2repo</url>
       <layout>p2</layout>
       <mirrorOfLayouts>p2</mirrorOfLayouts>
     </mirror>
@@ -197,7 +197,7 @@ under the License.
       <id>default-jboss-repos</id>
    <properties>
     <tern.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/tern</tern.reqs.url>
-    <tern.version>0.10.0.201506172157</tern.version>
+    <tern.version>1.0.0.201508302102</tern.version>
     <thym.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/thym</thym.reqs.url>
     <thym.version>0.3.0-SNAPSHOT-201507141315</thym.version>
    </properties>
