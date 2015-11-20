@@ -54,8 +54,7 @@
 					<localRepositoryPath>${projectsDirectory}/.m2</localRepositoryPath>
 					<streamLogs>${streamLogs}</streamLogs>
 					<goals>
-						<goal>clean</goal>
-						<goal>install</goal>
+						<goal>package</goal>
 					</goals>
 					<properties>
 						<skipTests>${skipTests}</skipTests>
@@ -63,7 +62,7 @@
 						<tpc.targetKind>${tpcKind}</tpc.targetKind>
 						<validate-target-platform.failOnError>${tpcValidate}</validate-target-platform.failOnError>
 						<tycho.localArtifacts>${tycho.localArtifacts}</tycho.localArtifacts>
-						<tychoVersion>0.23.0</tychoVersion>
+						<!--tychoVersion>0.23.0</tychoVersion-->
 						<maven.test.failure.ignore>true</maven.test.failure.ignore>
 						<skipBaselineComparison>true</skipBaselineComparison>
 					</properties>
@@ -72,7 +71,7 @@
 					<mavenOpts>${mavenOpts}</mavenOpts>
 				</configuration>
 				<executions>
-					<execution>
+					<!--execution>
                                                 <id>build-maven-plugins</id>
                                                 <goals>
                                                         <goal>run</goal>
@@ -82,35 +81,44 @@
                                                                 <pomInclude>jbosstools-maven-plugins/tycho-plugins/pom.xml</pomInclude>
                                                         </pomIncludes>
                                                 </configuration>
-                                        </execution>
+                                        </execution-->
 					<execution>
 						<id>build-jbosstools-target-platform</id>
 						<goals>
 							<goal>run</goal>
 						</goals>
 						<configuration>
+							<goals>
+								<goal>install</goal>
+							</goals>
 							<pomIncludes>
 								<pomInclude>jbosstools-target-platforms/jbosstools/pom.xml</pomInclude>
 							</pomIncludes>
 						</configuration>
 					</execution>
-					<execution>
+					<!--execution>
 						<id>build-jbdevstudio-target-platform</id>
 						<goals>
 							<goal>run</goal>
 						</goals>
 						<configuration>
+							<goals>
+								<goal>install</goal>
+							</goals>
 							<pomIncludes>
 								<pomInclude>jbosstools-target-platforms/jbdevstudio/pom.xml</pomInclude>
 							</pomIncludes>
 						</configuration>
-					</execution>
+					</execution-->
 					<execution>
 						<id>build-parent</id>
 						<goals>
 							<goal>run</goal>
 						</goals>
 						<configuration>
+	                                                <goals>
+        	                                                <goal>install</goal>
+	                                                </goals>
 							<pomIncludes>
 								<pomInclude>jbosstools-build/parent/pom.xml</pomInclude>
 							</pomIncludes>
