@@ -28,6 +28,7 @@
 		<module>${root.path}/jbosstools-jst</module>
 		<module>${root.path}/jbosstools-portlet</module>
 		<module>${root.path}/jbosstools-webservices</module>
+		<module>${root.path}/jbosstools-playground</module>
 		<!--module>${root.path}/jbdevstudio-product/plugins</module>
 		<module>${root.path}/jbdevstudio-product/features</module>
 		<module>${root.path}/jbdevstudio-product/site</module>
