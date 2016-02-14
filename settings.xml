@@ -197,9 +197,9 @@ under the License.
       <id>default-jboss-repos</id>
    <properties>
     <tern.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/tern</tern.reqs.url>
-    <tern.version>1.0.0.201508302102</tern.version>
+    <tern.version>1.1.0.201511082254</tern.version>
     <thym.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/thym</thym.reqs.url>
-    <thym.version>0.3.0-SNAPSHOT-201507141315</thym.version>
+    <thym.version>0.3.0-SNAPSHOT-201509301541</thym.version>
    </properties>
 
       <repositories>
@@ -222,6 +222,18 @@ under the License.
           <id>jboss-public-repository-group-jbt-product</id>
           <name>JBoss Public Repository Group</name>
           <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <layout>default</layout>
+        </repository>
+        <repository>
+          <id>maven-central</id>
+          <name>JBoss Public Repository Group</name>
+          <url>http://repo1.maven.org/maven2</url>
           <releases>
             <enabled>true</enabled>
           </releases>
