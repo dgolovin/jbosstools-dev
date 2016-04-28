@@ -153,7 +153,7 @@ under the License.
       <id>nightly-repos-empty-mirror</id>
       <mirrorOf>jbosstools-site,jbosstools-base,jbosstools-aerogear,jbosstools-openshift,jbosstools-hibernate,jbosstools-javaee,jbosstools-central,jbosstools-server,jbosstools-jst,jbosstools-portlet,jbosstools-birt,jbosstools-vpe,jbosstools-freemarker,jbosstools-forgejbosstools-arquillian,jbosstools-browsersim,jbosstools-livereload,jbosstools-webservices,jbosstools-playground,thym</mirrorOf>
       <name>Empty mirror repository</name>
-      <url>file://${project.basedir}/../emptyp2repo</url>
+      <url>file:///${project.basedir}/../emptyp2repo</url>
       <layout>p2</layout>
       <mirrorOfLayouts>p2</mirrorOfLayouts>
     </mirror>
