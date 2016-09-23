@@ -199,7 +199,7 @@ under the License.
     <tern.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/tern</tern.reqs.url>
     <tern.version>1.1.0.201511082254</tern.version>
     <thym.reqs.url>http://download.jboss.org/jbosstools/updates/requirements/thym</thym.reqs.url>
-    <thym.version>0.3.0-SNAPSHOT-201509301541</thym.version>
+    <thym.version>2.0.0.201607041526</thym.version>
    </properties>
 
       <repositories>
